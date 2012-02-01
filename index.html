@@ -30,99 +30,57 @@
 <body>
 
 	<!-- container -->
-	<div class="container">
-		
-		<div class="row">
-			<div class="twelve columns">
-				<h2>Welcome to Foundation</h2>
-				<p>This is version 2.1.4 released on January 07, 2011</p>
-		
-				<hr />
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="eight columns">
-				<h3>The Grid</h3>
-				
-				<!-- Grid Example -->
-				<div class="row">
-					<div class="twelve columns">
-						<div class="panel">
-							<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="six columns">
-						<div class="panel">
-							<p>Six columns</p>
-						</div>
-					</div>
-					<div class="six columns">
-						<div class="panel">
-							<p>Six columns</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="four columns">
-						<div class="panel">
-							<p>Four columns</p>
-						</div>
-					</div>
-					<div class="four columns">
-						<div class="panel">
-							<p>Four columns</p>
-						</div>
-					</div>
-					<div class="four columns">
-						<div class="panel">
-							<p>Four columns</p>
-						</div>
-					</div>
-				</div>
-				
-				<h3>Tabs</h3>
-				<dl class="tabs">
-					<dd><a href="#simple1" class="active">Simple Tab 1</a></dd>
-					<dd><a href="#simple2">Simple Tab 2</a></dd>
-					<dd><a href="#simple3">Simple Tab 3</a></dd>
-				</dl>
-				
-				<ul class="tabs-content">
-					<li class="active" id="simple1Tab">This is simple tab 1's content. Pretty neat, huh?</li>
-					<li id="simple2Tab">This is simple tab 2's content. Now you see it!</li>
-					<li id="simple3Tab">This is simple tab 3's content. It's, you know...okay.</li>
-				</ul>
-				
-				<h3>Buttons</h3>
-				
-				<p><a href="#" class="small blue button">Small Blue Button</a></p>
-				<p><a href="#" class="blue button">Medium Blue Button</a></p>
-				<p><a href="#" class="large blue button">Large Blue Button</a></p>
-				
-				<p><a href="#" class="nice radius small blue button">Nice Blue Button</a></p>
-				<p><a href="#" class="nice radius blue button">Nice Blue Button</a></p>
-				<p><a href="#" class="nice radius large blue button">Nice Blue Button</a></p>
+	<article class="container">
+	    <div class="row">
+	        <div class="two columns"></div>
+	        <div class="eight columns box" id="header">
+	            <h1>Cartonama Workshop</h1>
+	        </div>
+	        <div class="two columns"></div>
+	    </div>
+	    
+	    <div class="row">
+	        <div class="twelve columns box" id="about">
+	            <h2>About</h2>
+	            <p>Location based services (LBS) are becoming the order of the day. At any given point in time, individuals are searching for the closest ATM or restaurant around their homes/offices, plotting their location on Twitter and Facebook to keep their friends updated about their whereabouts, checking the situation with traffic while commuting, etc. With services boiling down to personalization and context, location provides a key dimension. The possibilities in the area of location based services are therefore immense.</p>
 
-			</div>
+                <p>Cartonama workshop is based on the understanding that people need to learn more about the tools with which they can manage their geographic data. This workshop will provide a platform where developers, neogeographers and entrepreneurs working on location based services will get hands-on understanding about advanced tools - server side and client side - to manage and represent their geographic data.</p>
+                
+                <p>The workshop will involve hands-on experience and training to work with tools ranging from databases, tile servers, TileMill, Geocoding APIs, Search APIs and JavaScript front end libraries. - OpenLayers and Leaflet. Discussion sessions and lectures on issues such as quality of open geographic data, commercialization, licensing and privacy are interspersed between the hands-on training sessions. This format will allow participants to think through the practical and conceptual issues that are arising or will potentially arise when they are working with their own geographic datasets to develop location based services. For more details about the sessions and the workshop, see speaker videos http://_______ and visit http://funnel.hasgeek.com/cartonama-workshop/ </p>
+	        </div>
+	    </div>
 
-			<div class="four columns">
-				<h4>Getting Started</h4>
-				<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-				
-				<h4>Other Resources</h4>
-				<p>Once you've exhausted the fun in this document, you should check out:</p>
-				<ul class="disc">
-					<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-					<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-					<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
+	    <div class="row">
+	        <div class="six columns box" id="left-person">
+	            <p><h4>Schuyler Erle</h4> has been a Free Software developer and evangelist for over fifteen years. He was a co-author of 'Mapping Hacks' and 'Google Maps Hacks'. He was also a co-founder of the OpenLayers and TileCache projects, and is a charter member of the OSGeo Foundation. More recently, Schuyler helped found the Humanitarian OpenStreetMap Team and serves on its Board of Directors. He currently resides in San Francisco.</p>
+	        </div>
+	        <div class="six columns box" id="right-person">
+	            <p><h4>Mikel Maron</h4> is a programmer and geographer working for impactful community and humanitarian uses of open source and open data. He is co-founder of Ground Truth Initiative, and of the Map Kibera project. He’s on the Board of the OpenStreetMap Foundation, and President of the Humanitarian OpenStreetMap Team, having helped to facilitate the OSM response to the Haiti earthquake. He’s travelled widely, organizing projects in India, Palestine, Egypt, Swaziland, and elsewhere. Previously to this, he co-founded Mapufacture and worked on collaborative platforms, geoweb standards, and various applications, with a wide spectrum of organizations from UN and government agencies to anarchist hacker collectives.</p>
+	        </div>
+	    </div>
+        <div class="row">
+            <div class="twelve columns box">
+                <h2>Registration and Fees</h2>
+                <p>The workshop is open for 25 participants only. Regular tickets are priced at Rs. 10,000.</p>
+                <p>Fees include meals and snacks on both days, stationery and t-shirt. Participants are expected to bring their own GPS devices / mobile phones and computers for the application building exercises.</p>
+
+                <p>You can buy your ticket from: http://</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="twelve columns box">
+                <h2>About Us</h2>
+                <p>HasGeek is a developer-led initiative, and has been un-organising the unconference scene since 2010. HasGeek is an attempt to solve the problem of insipid conferences organised around buzzwords by uninterested, soulless corporate entities who pitch them as company training events or as places for companies to pick up hot developers.</p>
+                <p>We are attempting to build a new space, a space that is genuinely respectful of the communities and topics that we choose to engage with. We want to be a space for developers who are as excited as us about technology and the possibilities that it creates, not to be a recruitment fair (though we hope you do find partnership possibilities at our events).</p>
+                <p>We are community-driven — check out our speaker-selection funnel, where you decide what talks to listen to by voting up or down — and small — there are just a handful of us running the show. We are doing this because this is what we love: bringing a whole bunch of us geeks together, sharing our interests and expertise and hanging out later over $beverageOfChoice.</p>
+            </div>
+        </div>
+
+        <div class="row">
+        </div>
+        
+	</article>
 	<!-- container -->
 	
 	

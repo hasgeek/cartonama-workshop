@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="stylesheets/foundation.css">
 	<link rel="stylesheet" href="stylesheets/app.css">
 	<link rel="stylesheet" href="stylesheets/colorbox.css">
+	<link rel="stylesheet" href="stylesheets/leaflet.css" />
+	<script type="text/javascript" src="javascripts/leaflet.js"></script>
 	<script type="text/javascript" src="http://use.typekit.com/guo5bse.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   	<script src="javascripts/jquery.min.js"></script>
@@ -271,9 +273,35 @@
 					<div class="four columns">
 						<p><img src="./cis/logo.png" alt="The Centre for Internet and Society"/><br />No. 194, 2nd C Cross, 4th Main<br />Opposite Domlur Club<br />Domlur 2nd Stage, Bangalore - 560 071</p>
 					</div>
-					<div class="eight columns">
+					<!--<div class="eight columns">
 						<iframe style="height:220px; width:100%" src="map.html"></iframe>
-					</div>
+					</div> -->
+					<div id="map" style="height: 220px"></div>
+
+
+ <script type="text/javascript">
+     
+      var cloudmadeUrl = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png',
+          subDomains = ['otile1','otile2','otile3','otile4'],
+          cloudmadeAttrib = '<a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>, and <a href="http://www.openstreetmap.org/" target="_blank">OSM</a>, <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>';
+         bounds = new L.LatLngBounds(new L.LatLng(11, 76), new L.LatLng(12, 77));
+      var cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18, attribution: cloudmadeAttrib, subdomains: subDomains});
+
+
+var map = new L.Map('map', {
+      center: bounds.getCenter(),
+      zoom: 15,
+      layers: [cloudmade],
+      maxBounds: bounds
+    });
+
+      var venue = new L.LatLng(12.9647, 77.6375); // geographical point (longitude and latitude)
+      map.setView(venue, 15).addLayer(cloudmade);
+
+      var venue_marker = new L.Marker(venue);
+      map.addLayer(venue_marker);
+      venue_marker.bindPopup('The Center for Internet and Society').openPopup();
+   </script> 
 				</div>
 			</div>
 		</div>

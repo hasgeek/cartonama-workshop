@@ -337,9 +337,7 @@ var map = new L.Map('map', {
 		        <p>In 2012, we are attempting to reach out to a wider audience of developers, entrepreneurs and students, across large and small Indian cities, by addressing interesting technology problems such as UI Engineering, Data Science, SMS and email notifications, among others.  </p>
 			</div>
 		</div>
-	
 
-	
 </div></div>
 	
 	<div class="container footer-cont">
@@ -355,14 +353,15 @@ var map = new L.Map('map', {
 
 	<!-- Google Analytics -->
 	<script type="text/javascript">
-     var _gaq = [['_setAccount', '{{ config['GA_CODE'] }}'], ['_trackPageview']];
-     (function(d, t) {
-      var g = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      g.async = true;
-      g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g, s);
-     })(document, 'script');
-    </script>
+   var _gaq = [['_setAccount', 'UA-19123154-17'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  
 </body>
 </html>

@@ -8,21 +8,17 @@
 	background: url('../images/hg-logo.png') no-repeat;
 	width: 100px;
 	height: 83px;
-	margin: 2em;
+	margin: 2.4em;
 }
 
 .cis-logo {
-	background:url('../cis/logo.png');
-	width:100px;
-	height:83px;
-	margin: 2em;
+	background:url('../cis/cis.png') no-repeat;
+	width: 290px;
+	height: 120px;
+	margin-left:70px;
+	margin-bottom:40px;
 }
-.hg-logo	{
-	background: url('../images/hg-logo.png') no-repeat;
-	width: 100px;
-	height: 83px;
-	margin: 2em;
-}
+
 .cartonama-logo	{
 	background: url('../images/cartonama-logo.png') no-repeat center;
 	height: 440px;

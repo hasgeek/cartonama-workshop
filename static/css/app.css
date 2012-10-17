@@ -1,5 +1,5 @@
 .hg-logo	{
-	background: url('../images/hg-logo.png') no-repeat;
+	background: url('../img/hg-logo.png') no-repeat;
 	width: 100px;
 	height: 83px;
 	margin: 2.4em;
@@ -14,21 +14,21 @@
 }
 
 .cartonama-logo	{
-	background: url('../images/cartonama-logo.png') no-repeat center;
+	background: url('../img/cartonama-logo.png') no-repeat center;
 	height: 440px;
 	width: 600px;
 	padding-left: 50px;
 }
 
 .cartonama-logo-mobile	{
-	background: url('../images/cartonama-logo-mobile.png') no-repeat center;
+	background: url('../img/cartonama-logo-mobile.png') no-repeat center;
 	height: 300px;
 	width: 220px;
 	padding-left: 50px;
 }
 
 .top-cont, .footer-cont	{
-	background: url('../images/web-bg.png');
+	background: url('../img/web-bg.png');
 }
 .bottom-cont	{
 	background: rgb(196,196,196); /* Old browsers */
